@@ -801,8 +801,8 @@ if __name__ == '__main__':
     __file__ = _find_script(args[0])
     try:
         if sys.version_info[0] < 3:
-            # we need to ovewrite the builtins to have profile
-            # globally defined (global variables is not enought
+            # we need to overwrite the builtins to have profile
+            # globally defined (a global variable is not enough
             # for all cases, e.g. a script that imports another
             # script where @profile is used)
             import __builtin__
